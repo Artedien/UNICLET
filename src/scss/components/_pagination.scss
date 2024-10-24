@@ -1,4 +1,5 @@
 .pagination {
+    padding-bottom: 8.7rem;
     &__pagination {
         position: absolute;
         left: 50%;
@@ -153,8 +154,8 @@
     &__order-dropdown-list-box {
         position: absolute;
         left: 0;
-        bottom: -1rem;
-        transform: translate(0, 100%);
+        top: -1rem;
+        transform: translate(0, -100%);
         font-weight: 400;
         font-size: 1.6rem;
         line-height: 100%;
