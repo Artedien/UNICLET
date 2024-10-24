@@ -1,0 +1,48 @@
+<div class="reviewModal__wrapper modal__wrapper">
+    <div class="reviewModal">
+        <form class="reviewModal__inner">
+            <div class="reviewModal__title-box">
+                <p class="reviewModal__title">Оставить отзыв</p>
+            </div>
+            <div class="reviewModal__rating-box">
+                <div class="reviewModal__rating">
+                    <div class="reviewModal__rating-items">
+                        <input id="rating__5" class="reviewModal__rating-item" type="radio" name="rating" value="5" checked="" />
+                        <label for="rating__5" class="reviewModal__rating-label"><span>5</span></label>
+                        <input id="rating__4" class="reviewModal__rating-item" type="radio" name="rating" value="4" />
+                        <label for="rating__4" class="reviewModal__rating-label"><span>4</span></label>
+                        <input id="rating__3" class="reviewModal__rating-item" type="radio" name="rating" value="3" />
+                        <label for="rating__3" class="reviewModal__rating-label"><span>3</span></label>
+                        <input id="rating__2" class="reviewModal__rating-item" type="radio" name="rating" value="2" />
+                        <label for="rating__2" class="reviewModal__rating-label"><span>2</span></label>
+                        <input id="rating__1" class="reviewModal__rating-item" type="radio" name="rating" value="1" />
+                        <label for="rating__1" class="reviewModal__rating-label"><span>1</span></label>
+                    </div>
+                </div>
+            </div>
+            <label class="reviewModal__comment-box">
+                <span class="reviewModal__comment-title">Комментарий</span>
+                <textarea class="reviewModal__comment-textarea"></textarea>
+            </label>
+
+            <div class="reviewModal__btn-box">
+                <button class="reviewModal__reject reset-btn">Отмена</button>
+                <button type="submit" class="reviewModal__submit apply-btn">Отправить</button>
+            </div>
+        </form>
+    </div>
+</div>
+<div class="successReviewModal__wrapper modal__wrapper">
+    <div class="successModal">
+        <div class="successModal__inner">
+            <div class="successModal__logo-box">
+                <img src="./assets/images/icons/modal-review.svg" alt="" class="successModal__logo" />
+            </div>
+            <div class="successModal__content-box">
+                <h2 class="successModal__title">Оценка отправлена</h2>
+                <p class="successModal__discrihtion">Спасибо, что помогаете платформе стать лучше</p>
+            </div>
+            <button class="successModal__btn apply-btn">Хорошо</button>
+        </div>
+    </div>
+</div>

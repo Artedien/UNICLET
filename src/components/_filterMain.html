@@ -1,0 +1,485 @@
+<div class="filter__main-wrapper">
+    <div class="filter__main-box">
+        <div class="filter__main-tab-box">
+            <ul class="filter__main-tab-list">
+                <li class="filter__main-tab-item active">
+                    <div class="filter__main-tab-item-image-box">
+                        <img
+                            src="./assets/images/icons/filter-date.svg"
+                            alt=""
+                            class="filter__main-tab-item-image"
+                        />
+                    </div>
+                    <button class="filter__main-tab-item-btn">
+                        <p class="filter__main-tab-btn-text">Дата</p>
+                    </button>
+                </li>
+                <li class="filter__main-tab-item">
+                    <div class="filter__main-tab-item-image-box">
+                        <img
+                            src="./assets/images/icons/filter-burger.svg"
+                            alt=""
+                            class="filter__main-tab-item-image"
+                        />
+                    </div>
+                    <button class="filter__main-tab-item-btn">
+                        <p class="filter__main-tab-btn-text">Статус</p>
+                    </button>
+                </li>
+                <li class="filter__main-tab-item">
+                    <div class="filter__main-tab-item-image-box">
+                        <img
+                            src="./assets/images/icons/filter-product.svg"
+                            alt=""
+                            class="filter__main-tab-item-image"
+                        />
+                    </div>
+                    <button class="filter__main-tab-item-btn">
+                        <p class="filter__main-tab-btn-text">Товар</p>
+                    </button>
+                </li>
+                <li class="filter__main-tab-item">
+                    <div class="filter__main-tab-item-image-box">
+                        <img
+                            src="./assets/images/icons/filter-globe.svg"
+                            alt=""
+                            class="filter__main-tab-item-image"
+                        />
+                    </div>
+                    <button class="filter__main-tab-item-btn">
+                        <p class="filter__main-tab-btn-text">Адрес</p>
+                    </button>
+                </li>
+                <li class="filter__main-tab-item">
+                    <div class="filter__main-tab-item-image-box">
+                        <img
+                            src="./assets/images/icons/filter-delivery.svg"
+                            alt=""
+                            class="filter__main-tab-item-image"
+                        />
+                    </div>
+                    <button class="filter__main-tab-item-btn">
+                        <p class="filter__main-tab-btn-text">Служба доставки</p>
+                    </button>
+                </li>
+            </ul>
+
+            <div class="filter__main-general-box">
+                <div class="filter__main-option filter__main-date-wrapper isActive">
+                    <div class="filter__main-date-box">
+                        <div class="filter__main-date-btn-box">
+                            <button class="filter__main-date-btn">Месяц</button>
+                            <button class="filter__main-date-btn">Квартал</button>
+                            <button class="filter__main-date-btn">Год</button>
+                        </div>
+                        <div class="filter__main-checkbox-box">
+                            <input type="checkbox" id="price-request" name="filter__main-checkbox" />
+                            <label for="filter__main-checkbox"
+                                ><span class="filter__main-checkbox-text">Весь период</span></label
+                            >
+                        </div>
+                        <div class="filter__main-range-box">
+                            <div class="filter__main-range-title-box">
+                                <p class="filter__main-range-title">Собственный диапазон дат:</p>
+                            </div>
+                            <div class="filter__main-range-start-input">
+                                <input
+                                    id="datepicker"
+                                    class="filter__main-range-start flatpickr-input"
+                                    type="text"
+                                    required=""
+                                    placeholder="Начало"
+                                    readonly="readonly"
+                                />
+                                <div class="filter__main-range-input-img-box">
+                                    <img
+                                        src="./assets/images/icons/filter-date.svg"
+                                        alt=""
+                                        class="filter__main-range-input-img"
+                                    />
+                                </div>
+                            </div>
+                            <div class="filter__main-range-end-input">
+                                <input
+                                    id="datepicker"
+                                    class="filter__main-range-end flatpickr-input"
+                                    type="text"
+                                    required=""
+                                    placeholder="Конец"
+                                    readonly="readonly"
+                                />
+                                <div class="filter__main-range-input-img-box">
+                                    <img
+                                        src="./assets/images/icons/filter-date.svg"
+                                        alt=""
+                                        class="filter__main-range-input-img"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="filter__main-option filter__main-status-wrapper">
+                    <div class="filter__main-status-search-box">
+                        <div class="filter__main-status-input-box">
+                            <div class="filter__main-status-input-image-box">
+                                <img
+                                    src="./assets/images/icons/input-search.svg"
+                                    alt=""
+                                    class="filter__main-status-input-image"
+                                />
+                            </div>
+                            <input
+                                type="text"
+                                id="text-input"
+                                class="filter__main-status-input"
+                                placeholder="Поиск по категорям…"
+                            />
+                        </div>
+                    </div>
+                    <ul class="filter__main-status-box">
+                        <li class="filter__main-status-item">
+                            <input type="checkbox" id="status-price-request" name="status-price-request" />
+                            <label for="status-price-request"
+                                ><span class="filter__status status-point status-price-request"
+                                    >Запрос цены</span
+                                ></label
+                            >
+                        </li>
+                        <li class="filter__main-status-item">
+                            <input
+                                type="checkbox"
+                                id="status-feedback-awaited"
+                                name="status-feedback-awaited"
+                            />
+                            <label for="status-feedback-awaited"
+                                ><span class="filter__status status-point status-feedback-awaited"
+                                    >Ожидает оплаты</span
+                                ></label
+                            >
+                        </li>
+                        <li class="filter__main-status-item">
+                            <input type="checkbox" id="status-paid" name="status-paid" />
+                            <label for="status-paid"
+                                ><span class="filter__status status-point status-paid">Оплачен</span></label
+                            >
+                        </li>
+                        <li class="filter__main-status-item">
+                            <input type="checkbox" id="status-processing" name="status-processing" />
+                            <label for="status-processing"
+                                ><span class="filter__status status-point status-processing"
+                                    >В обработке</span
+                                ></label
+                            >
+                        </li>
+                        <li class="filter__main-status-item">
+                            <input
+                                type="checkbox"
+                                id="status-deliver-for-delivery"
+                                name="status-deliver-for-delivery"
+                            />
+                            <label for="status-deliver-for-delivery"
+                                ><span class="filter__status status-point status-deliver-for-delivery"
+                                    >Передаем в доставку</span
+                                ></label
+                            >
+                        </li>
+                        <li class="filter__main-status-item">
+                            <input
+                                type="checkbox"
+                                id="status-delivery-service"
+                                name="status-delivery-service"
+                            />
+                            <label for="status-delivery-service"
+                                ><span class="filter__status status-point status-delivery-service"
+                                    >В службе доставки</span
+                                ></label
+                            >
+                        </li>
+                        <li class="filter__main-status-item">
+                            <input type="checkbox" id="status-delivered" name="status-delivered" />
+                            <label for="status-delivered"
+                                ><span class="filter__status status-point status-delivered"
+                                    >Доставлен</span
+                                ></label
+                            >
+                        </li>
+                        <li class="filter__main-status-item">
+                            <input type="checkbox" id="status-not-delivered" name="status-not-delivered" />
+                            <label for="status-not-delivered"
+                                ><span class="filter__status status-point status-not-delivered"
+                                    >Не доставлен</span
+                                ></label
+                            >
+                        </li>
+                        <li class="filter__main-status-item">
+                            <input type="checkbox" id="status-returning" name="status-returning" />
+                            <label for="status-returning"
+                                ><span class="filter__status status-point status-returning"
+                                    >Возврат заказа</span
+                                ></label
+                            >
+                        </li>
+                        <li class="filter__main-status-item">
+                            <input
+                                type="checkbox"
+                                id="status-feedback-awaited"
+                                name="status-feedback-awaited"
+                            />
+                            <label for="status-feedback-awaited"
+                                ><span class="filter__status status-point status-feedback-awaited"
+                                    >Ожидается отзыв</span
+                                ></label
+                            >
+                        </li>
+                        <li class="filter__main-status-item">
+                            <input
+                                type="checkbox"
+                                id="status-product-replacement"
+                                name="status-product-replacement"
+                            />
+                            <label for="status-product-replacement"
+                                ><span class="filter__status status-point status-product-replacement"
+                                    >Обмен</span
+                                ></label
+                            >
+                        </li>
+                        <li class="filter__main-status-item">
+                            <input type="checkbox" id="status-complete" name="status-complete" />
+                            <label for="status-complete"
+                                ><span class="filter__status status-point status-complete"
+                                    >Завершен</span
+                                ></label
+                            >
+                        </li>
+                        <li class="filter__main-status-item">
+                            <input type="checkbox" id="status-cancel" name="status-cancel" />
+                            <label for="status-cancel"
+                                ><span class="filter__status status-point status-cancel">Отменен</span></label
+                            >
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="filter__main-option filter__main-product-wrapper">
+                    <div class="filter__main-product-box">
+                        <div class="filter__main-status-search-box">
+                            <div class="filter__main-status-input-box">
+                                <div class="filter__main-status-input-image-box">
+                                    <img
+                                        src="./assets/images/icons/filter-tool.svg"
+                                        alt=""
+                                        class="filter__main-status-input-image"
+                                    />
+                                </div>
+
+                                <div class="filter__main-status-input-tool-image-box">
+                                    <img
+                                        src="./assets/images/icons/input-search.svg"
+                                        alt=""
+                                        class="filter__main-status-input-image"
+                                    />
+                                </div>
+                                <input
+                                    type="text"
+                                    id="text-input"
+                                    class="filter__main-status-input"
+                                    placeholder="Артикул"
+                                />
+                            </div>
+                        </div>
+                        <div class="filter__main-product">
+                            <div class="filter__main-product-item">
+                                <div class="filter__main-product-img-box">
+                                    <img
+                                        src="./assets/images/filter-item.png"
+                                        alt=""
+                                        class="filter__main-product-img"
+                                    />
+                                </div>
+                                <div class="filter__main-product-content-box">
+                                    <div class="filter__main-product-content-title">Кухня</div>
+                                    <div class="filter__main-product-content-article">Артикул: 123457</div>
+                                    <div class="filter__main-product-content-color">Цвет: черный</div>
+                                </div>
+                                <div class="filter__main-product-close-box">
+                                    <button class="filter__main-product-close-btn">
+                                        <img
+                                            src="./assets/images/icons/filter-item-close.svg"
+                                            alt=""
+                                            class="filter__main-product-close-btn-image"
+                                        />
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="filter__main-option filter__main-address-wrapper">
+                    <div class="filter__main-address-box">
+                        <div class="filter__main-status-search-box">
+                            <div class="filter__main-status-input-box">
+
+
+                                <div class="filter__main-status-input-tool-image-box">
+                                    <img
+                                        src="./assets/images/icons/input-search.svg"
+                                        alt=""
+                                        class="filter__main-status-input-image"
+                                    />
+                                </div>
+                                <input
+                                    type="text"
+                                    id="text-input"
+                                    class="filter__main-status-input"
+                                    placeholder="Поиск по городу или региону"
+                                />
+                            </div>
+
+                        </div>
+                        <div class="filter__main-address-list-box">
+                            <ul class="filter__main-address-list">
+                                <li class="filter__main-address-list-item">
+                                    <input
+                                    type="checkbox"
+                                    id="moscow"
+                                    name="moscow"
+                                />
+                                <label for="moscow"
+                                    ><span class="filter__main-address-list-item-label"
+                                        >Москва</span
+                                    ></label
+                                >
+                                </li>
+                                <li class="filter__main-address-list-item">
+                                    <input
+                                    type="checkbox"
+                                    id="spb"
+                                    name="spb"
+                                />
+                                <label for="spb"
+                                    ><span class="filter__main-address-list-item-label"
+                                        >Санкт-Петербург</span
+                                    ></label
+                                >
+                                </li>
+                                <li class="filter__main-address-list-item">
+                                    <input
+                                    type="checkbox"
+                                    id="ekb"
+                                    name="ekb"
+                                />
+                                <label for="ekb"
+                                    ><span class="filter__main-address-list-item-label"
+                                        >Екатеринбург</span
+                                    ></label
+                                >
+                                </li>
+                                <li class="filter__main-address-list-item">
+                                    <input
+                                    type="checkbox"
+                                    id="any-city"
+                                    name="any-city"
+                                />
+                                <label for="any-city"
+                                    ><span class="filter__main-address-list-item-label"
+                                        >Список городов, которые есть в заказах в алфавитном порядке</span
+                                    ></label
+                                >
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="filter__main-option filter__main-delivery-wrapper">
+                    <div class="filter__main-address-box">
+                        <div class="filter__main-status-search-box">
+                            <div class="filter__main-status-input-box">
+
+
+                                <div class="filter__main-status-input-tool-image-box">
+                                    <img
+                                        src="./assets/images/icons/input-search.svg"
+                                        alt=""
+                                        class="filter__main-status-input-image"
+                                    />
+                                </div>
+                                <input
+                                    type="text"
+                                    id="text-input"
+                                    class="filter__main-status-input"
+                                    placeholder="Поиск"
+                                />
+                            </div>
+
+                        </div>
+                        <div class="filter__main-address-list-box">
+                            <ul class="filter__main-address-list">
+                                <li class="filter__main-address-list-item">
+                                    <input
+                                    type="checkbox"
+                                    id="dline"
+                                    name="bline"
+                                />
+                                <label for="bline"
+                                    ><span class="filter__main-address-list-item-label"
+                                        >Деловые линии</span
+                                    ></label
+                                >
+                                </li>
+                                <li class="filter__main-address-list-item">
+                                    <input
+                                    type="checkbox"
+                                    id="sdek"
+                                    name="sdek"
+                                />
+                                <label for="sdek"
+                                    ><span class="filter__main-address-list-item-label"
+                                        >СДЭК</span
+                                    ></label
+                                >
+                                </li>
+                                <li class="filter__main-address-list-item">
+                                    <input
+                                    type="checkbox"
+                                    id="BoxBerry"
+                                    name="BoxBerry"
+                                />
+                                <label for="BoxBerry"
+                                    ><span class="filter__main-address-list-item-label"
+                                        >BoxBerry</span
+                                    ></label
+                                >
+                                </li>
+                                <li class="filter__main-address-list-item">
+                                    <input
+                                    type="checkbox"
+                                    id="any-delivery"
+                                    name="any-delivery"
+                                />
+                                <label for="any-delivery"
+                                    ><span class="filter__main-address-list-item-label"
+                                        >Собственная доставка</span
+                                    ></label
+                                >
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="filter__main-control-box">
+                    <div class="filter__main-reset-btn-box">
+                        <button class="filter__main-reset-btn reset-btn">Сбросить</button>
+                    </div>
+                    <div class="filter__main-apply-btn-box">
+                        <button class="filter__main-apply-btn apply-btn">Применить</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

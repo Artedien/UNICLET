@@ -1,0 +1,103 @@
+.filter {
+    // .filter__modal-box
+
+    &__modal-wrapper{
+        display: none;
+        position: absolute;
+        top: 2.7rem;
+        left: -6rem;
+
+        &.active{
+            display: block;
+        }
+    }
+
+    &__modal-box {
+        background: #fff;
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+        width: 20.8rem;
+        padding: 1.2rem;
+        box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, 0.15);
+        border-radius: 0.4rem;
+    }
+
+    // .filter__modal-control-box
+
+    &__modal-control-box {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    // .filter__modal-reset
+
+    &__modal-reset {
+        font-weight: 700;
+        font-size: 1.4rem;
+        line-height: 129%;
+        text-decoration: underline;
+        text-decoration-skip-ink: none;
+        text-align: center;
+        color: #447981;
+    }
+
+    // .filter__modal-close-box
+
+    &__modal-close-box {
+    }
+
+    // .filter__moda-close-img
+
+    &__moda-close-img {
+        pointer-events: none;
+    }
+
+    // .filter__modal
+
+    &__modal {
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+    }
+
+    // .filter__modal-option-box
+
+    &__modal-option-box {
+        display: flex;
+    }
+
+
+
+		// .filter__modal-option-label
+
+		&__modal-option-label {
+            position: relative;
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            cursor: pointer;
+		}
+
+		// .filter__modal-option-input
+
+		&__modal-option-input {
+            // position: relative;
+            // inset: 0;
+            width: 2rem;
+            height: 2rem;
+            flex-shrink: 0;
+		}
+
+		// .filter__modal-option-check
+
+		&__modal-option-check {
+		}
+
+		// .filter__modal-option-status
+
+		&__modal-option-status {
+		}
+
+    
+}

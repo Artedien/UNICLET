@@ -1,0 +1,89 @@
+@import './mixins';
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&family=Poppins&family=Ubuntu:wght@300;400;500;700&display=swap');
+
+// colors
+$turquoise: #00c7be;
+$turquoiseLight: #dbfffb;
+$purple: #8810c0;
+$purpleLight: #fbf1ff;
+$yellow: #b37b0e;
+$yellowLight: #fffcf1;
+$blue: #007aff;
+$blueLight: #ecf0fd;
+$sapphirine: #108bc0;
+$sapphirineLight: #f1fcff;
+$green: #027a48;
+$greenLight: #ecfdf3;
+$indigo: #3310c0;
+$indigoLight: #f5f1ff;
+$red: #c01048;
+$pink: #fff1f3;
+$emerald: #34c759;
+$emeraldLight: #b5ffdc;
+
+$orange: #ff3f1a;
+$turquoisePale: #8cdcde;
+
+$black: #333;
+$gray: #f5f5f5;
+$white: #ffffff;
+// body
+body {
+    position: relative;
+
+    font-family: 'Manrope', sans-serif;
+    color: #42454a;
+    font-weight: 600;
+    font-style: normal;
+
+    .lock & {
+        overflow: hidden;
+        touch-action: none;
+    }
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+}
+
+// main
+main {
+    flex-grow: 1;
+}
+
+section {
+    padding: 0;
+    @media (max-width: 48em) {
+    }
+    &._first {
+        padding: 5.7rem 0 9rem;
+        @media (max-width: 48em) {
+            padding: 2.6rem 0 10rem;
+        }
+    }
+}
+
+.desktop {
+    display: flex;
+
+    @media (max-width: 48em) {
+        display: none;
+    }
+}
+
+.mobile {
+    display: none;
+
+    @media (max-width: 48em) {
+        display: flex;
+    }
+}
+
+@import './ui/ui';
+// @import './components/_header';
+// @import './components/_footer';

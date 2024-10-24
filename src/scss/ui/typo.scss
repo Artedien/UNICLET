@@ -1,0 +1,118 @@
+
+    // .main__tab-status-status
+
+    .status-point {
+        white-space: nowrap;
+        display: flex;
+        gap: 0.6rem;
+        border-radius: 1.6rem;
+        padding: 0.2rem 0.8rem;
+        font-weight: 600;
+        font-size: 1.2rem;
+        line-height: 150%;
+        align-items: center;
+
+        &::before {
+            content: '';
+            width: 0.6rem;
+            height: 0.6rem;
+            border-radius: 50%;
+            flex-shrink: 0;
+        }
+    }
+
+.status-paid {
+    color: #b37b0e;
+    background: #fffcf1;
+    &::before {
+        background: #f6b73d;
+    }
+}
+
+.status-processing {
+    color: #333;
+    background: #f5f5f5;
+    &::before {
+        background: #b3b3b3;
+    }
+}
+
+.status-deliver-for-delivery {
+    color: #007aff;
+    background: #ecf0fd;
+    &::before {
+        background: #007aff;
+    }
+}
+
+.status-delivery-service {
+    color: #108bc0;
+    background: #f1fcff;
+    &::before {
+        background: #3DD5F6;
+    }
+}
+
+.status-delivered {
+    color: #027a48;
+    background: #ecfdf3;
+    &::before {
+        background: #12B76A;
+    }
+}
+
+.status-feedback-awaited {
+    color: #8810c0;
+    background: #fbf1ff;
+    &::before {
+        background: #C63DF6;
+    }
+}
+
+.status-returning {
+    color: #3310c0;
+    background: #f5f1ff;
+    &::before {
+        background: #6d3df6;
+    }
+}
+
+.status-not-delivered {
+    color: #c01048;
+    background: #fff1f3;
+    &::before {
+        background: #f63d68;
+    }
+}
+
+.status-product-replacement {
+    color: #8810c0;
+    background: #fbf1ff;
+    &::before {
+        background: #C63DF6;
+    }
+}
+
+.status-price-request {
+    color: #00a29a;;
+    background: #dbfffb;;
+    &::before {
+        background:  #00c7be;
+    }
+}
+
+.status-complete {
+    color: #34c759;;
+    background: #b5ffdc;;
+    &::before {
+        background:  #34c759;
+    }
+}
+
+.status-cancel {
+    color: #c01048;;
+    background: #fff1f3;;
+    &::before {
+        background:  #c01048;
+    }
+}
